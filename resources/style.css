@@ -1,0 +1,199 @@
+html {
+  font-size: 18px;
+  font-family: helvetica;
+}
+/* general */
+p {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: bold;
+}
+/* Header */
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0.66rem 0;
+  font-size: 1rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+/* banner */
+.main-banner {
+  height: 25rem;
+  background-image: url("moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.latest {
+  color: white;
+  background-color: black;
+  padding: 2rem 3rem;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+}
+.latest h4 {
+  margin-bottom: 0.25rem
+}
+.latest h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* navigation */
+nav.desktop {
+  color: white;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+}
+nav.tablet {
+  color: white;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  text-align: center;
+  display: none;
+}
+/* Catalogue */
+.catalogue {
+  margin: 3rem 0;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  border: 4px solid black;
+  width: 30%;
+}
+.item p {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+}
+.img-container img {
+  width: 9rem;
+}
+/* information */
+.info {
+  margin-bottom: 4rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.info-content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: white;
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+/* footer */
+footer {
+  padding: 5rem 0;
+  background-color: black;
+}
+/* For tablet */
+@media only screen and (max-width: 1024px) {
+  /* general */
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  /* navigation */
+  nav.desktop {
+    display: none;
+  }
+  nav.tablet {
+    display: block;
+  }
+  /* catalogue */
+  .item {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+  /* banner */
+  .latest h1 {
+    font-size: 1.5rem;
+  }
+}
+/* For mobile */
+@media only screen and (max-width: 470px) {
+  /* header */
+  header h1 {
+    display: none;
+  }
+  .content {
+    justify-content: center;
+  }
+  /* banner */
+  h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+  .latest h1 {
+    font-size: 1rem;
+  }
+  .main-banner {
+    height: 15rem
+  }
+  .latest {
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+  }
+  /* catalogue */
+  .items {
+    justify-content: center;
+  }
+  .watch {
+    display: none;
+  }
+  .pen {
+    width: 90%;
+  }
+/* information */
+.contact {
+  flex-direction: column;
+  align-items: center;
+}
+.info-content {
+  margin-bottom: 0.5rem;
+  width: 90%;
+}
+/* footer */
+footer {
+  text-align: center;
+}
+}
